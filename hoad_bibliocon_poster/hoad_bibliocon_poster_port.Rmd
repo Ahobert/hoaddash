@@ -1,0 +1,91 @@
+---
+main_topsize: 0.15 #percent coverage of the poster
+main_bottomsize: 0.061
+title: 'Das Hybrid Open Access Dashboard (HOAD)'
+author:
+  - name: Inke Achterberg
+    affil: 1
+  - name: Najko Jahn
+    affil: 1
+    orcid: '0000-0001-5105-1463'
+  - name: Nick Haupka
+    affil: 1
+  - name: Anne Hobert
+    affil: 1
+    orcid: '0000-0003-2429-2995'
+affiliation:
+  - num: 1
+    address: Universität Göttingen, Niedersächsische Staats- und Universitätsbibliothek, Göttingen, Deutschland
+main_findings:
+  - "Wie offen sind hybride Zeitschriften in Transformationsverträgen?"
+#  - "(Nur?) 45 % der Artikel in hybriden Zeitschriften sind OA (Publikationsjahr 2022, Korresponzentautor:in aus Deutschland)."
+logoleft_name: ../hoad_logo.png
+logoright_name: hoad_qrcode.png
+logocenter_name: GAU_SUB_grey.svg # manually change size in html to width: 45%; left: calc(95cm * 0.275)
+poster_height: "195cm"
+poster_width: "95cm"
+font_family: "Atkinson Hyperlegible"
+titletext_fontfamily: "Atkinson Hyperlegible"
+primary_colour: "#006bd5"
+column_numbers: 3
+output: 
+  posterdown::posterdown_betterport:
+    self_contained: false
+    pandoc_args: --mathjax
+    number_sections: false
+    highlight: espresso
+bibliography: packages.bib
+link-citations: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'center',
+                      out.width = "100%")
+options(knitr.table.format = "html") 
+```
+
+# Ziel des Dashboards
+
+Mit Hilfe der interaktiven Webanwendung können Bibliotheken und Konsortien wichtige Erkenntnisse für die Anbahnung und Evaluierung von Open-Access-Transformationsverträgen gewinnen:
+
+- Welcher Anteil der Artikel in hybriden Journalen wird bereits Open Access unter einer Creative-Commons-Lizenz veröffentlicht?
+- Wie stellt sich der deutsche Output in hybriden Journalen im Vergleich zu anderen Ländern dar?
+- Stellen Verlage Metadaten offen zur Verfügung und wenn nicht, wo bestehen Lücken?
+
+
+# Inhalte
+
+Beispielhaft / Auszüge, hier vor allem Grafiken ergänzen
+
+Auswahl Grafiken:
+
+- Screenshot einführende Zahlen Startseite
+- Creative Commons licenses over time, Germany
+- Creative Commons licenses over time by publisher (Ausschnitt, evtl gegenüberstellend D/International)
+- License metadata gaps / Crossref metadata coverage
+- Publisher league: Hybrid Open Access output, Filter Germany, sortiert nach Total Hybrid, ggf. mittleren Teil ausschneiden
+- Open Access in hybrid journals by country
+
+
+# Methodik und Kontext 
+
+## Datenquellen und Implementation
+
+About text umformulieren, evtl. Logos?
+
+## Kontext
+
+Details zu Transformative Agreements
+
+
+# Limitationen ?
+
+# Fazit und Ausblick
+
+Erweiterungen gegen Finanzierung möglich
+
+# References
